@@ -1,0 +1,75 @@
+/* General */
+div#logo {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 40pt;
+	text-align: center;
+	margin: 20px auto;
+}
+
+div#logo a {
+	color: #000000;
+}
+
+div.content {
+	text-align: left;
+	width: 650px;
+	padding: 20px;
+	margin: auto;
+}             
+
+div.content h1 {
+    margin-bottom: 1em;
+}                  
+
+div#loading {
+    color: #468966;
+}
+
+div#copyright {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+span.important {
+	font-size: 1.3em;
+}                                 
+
+#annoyance {
+    display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Post Types */
+.float {
+	float: left; 
+}
+
+.hidden {
+	display: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.legend {
+	list-style-type: none !important;
+	text-align: right;
+}
+
+/* Form */
+label {
+	display: block;
+}
+
+div.submit {
+	text-align: center;
+}
+
+div.error-message {
+	font-size: 0.8em;
+	color: #FF0000;
+}

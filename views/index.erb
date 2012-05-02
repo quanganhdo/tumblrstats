@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>TumblrStats</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<style type="text/css" media="screen">
+			body {
+				text-align: center;
+				font-family: Arial, Verdana;
+				font-size: 64%;
+			}
+			div {
+				padding-top: 150px;
+				font-size: 3em;
+			}
+			div#tla {
+				font-size: 1.2em;
+				width: 800px;
+				margin: 0 auto;
+			}
+			input[type="text"], input#username {
+				border: 1px solid #CCCCCC;
+				color: #CCCCCC;
+				font-size: 1em;
+				padding: 4px 6px;
+				width: 250px;
+				text-align: right;
+			}
+			input[type="submit"], input.hidden {
+				display: none;
+			}
+			a {
+				color: #0080FF;
+			}
+			span {
+				padding-top: 10px;
+			}
+		</style>
+		<script src="js/fat.js" type="text/javascript"></script>
+		<script type="text/javascript" charset="utf-8">
+			function $(id) {
+				return document.getElementById(id);
+			}
+			
+			function r() {
+				$('username').select();
+				$('username').style.color = 'black';
+				$('username').value = $('username').value == 'What' ? '' : $('username').value;
+				$('1').innerHTML = 'my';
+				$('2').innerHTML = '.';
+				$('3').style.display = 'block';
+				Fat.fade_element(1, 30, 1000);
+				Fat.fade_element(2, 30, 1000);
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<form method="POST" name="tumblr-stats">
+				<input type="text" id="username" name="username" value="What" onclick="javascript:r()" /> is <span id="1">your</span> Tumblr username<span id="2">?</span><br />
+				<span id="3" style="display: none">Give me some stats when I hit the Enter key.</span>
+				<input type="submit" name="go" value="submit" class="hidden" />
+			</form>
+		</div>		
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-6661691-5");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+	</body>
+</html>

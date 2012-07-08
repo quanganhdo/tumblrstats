@@ -9,7 +9,7 @@
 
 Stats = {
 	username: 'quanganhdo',
-	url: 'http://log.quanganhdo.com',
+	url: 'http://log.quanganhdo.com/',
 	begin: '',
 	end: '',
 	'posts-start': 0,

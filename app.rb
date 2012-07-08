@@ -14,7 +14,7 @@ end
 
 get '/:username' do
   @username = h params[:username]
-  @url = "http://#{@username}.tumblr.com"
+  @url = "http://#{@username}.tumblr.com/"
   
   uri = URI.parse(@url)
   http = Net::HTTP.new(uri.host, uri.port)
